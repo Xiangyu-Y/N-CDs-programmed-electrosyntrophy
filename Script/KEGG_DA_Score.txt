@@ -1,0 +1,129 @@
+
+data <- "Group,Pathway Description,Num,DA Score
+P+G-NCDs_vs_P+G,Glycine serine and threonine metabolism,2,0.1333
+P+G-NCDs_vs_P+G,Cysteine and methionine metabolism,3,0.2
+P+G-NCDs_vs_P+G,Arginine biosynthesis,4,0.5
+P+G-NCDs_vs_P+G,Alanine aspartate and glutamate metabolism,5,0.2308
+P+G-NCDs_vs_P+G,Arginine and proline metabolism,5,0.05882
+P+G-NCDs_vs_P+G,Citrate cycle (TCA cycle),3,0.5
+P+G-NCDs_vs_P+G,C5-Branched dibasic acid metabolism,5,0.5
+P+G-NCDs_vs_P+G,Glyoxylate and dicarboxylate metabolism,6,0.4286
+P+G-NCDs_vs_P+G,Amino sugar and nucleotide sugar metabolism,8,0.3333
+P+G-NCDs_vs_P+G,Oxidative phosphorylation,2,0.1667
+P+G-NCDs_vs_P+G,Nitrogen metabolism,2,0.5
+P+G-NCDs_vs_P+G,Nucleotide metabolism,8,0.1304
+P+G-NCDs_vs_P+G,Biosynthesis of cofactors,24,0.169
+P+G-NCDs_vs_P+G,Glycerophospholipid metabolism,0,0
+P+G-NCDs_vs_P+G,alpha-Linolenic acid metabolism,1,-0.125
+P+G-NCDs_vs_P+G,Biosynthesis of unsaturated fatty acids,1,-0.5
+P+G-NCDs_vs_P+G,ABC transporters,3,0.09375
+P+G-NCDs_vs_P+G,Pantothenate and CoA biosynthesis,2,0.2222
+P+G-NCDs_vs_P+G,Porphyrin metabolism,2,0.2222
+P+G-NCDs_vs_P+G,Vitamin B6 metabolism,3,0.5
+P-NCDs_vs_P,Glycine serine and threonine metabolism,3,0.1333
+P-NCDs_vs_P,Cysteine and methionine metabolism,5,0.06667
+P-NCDs_vs_P,Arginine biosynthesis,2,-0.375
+P-NCDs_vs_P,Alanine aspartate and glutamate metabolism,2,-0.2308
+P-NCDs_vs_P,Arginine and proline metabolism,2,0.1176
+P-NCDs_vs_P,Citrate cycle (TCA cycle),2,-0.3333
+P-NCDs_vs_P,C5-Branched dibasic acid metabolism,1,-0.1667
+P-NCDs_vs_P,Glyoxylate and dicarboxylate metabolism,5,0
+P-NCDs_vs_P,Amino sugar and nucleotide sugar metabolism,6,-0.05556
+P-NCDs_vs_P,Oxidative phosphorylation,3,0
+P-NCDs_vs_P,Nitrogen metabolism,1,-0.5
+P-NCDs_vs_P,Nucleotide metabolism,18,-0.1304
+P-NCDs_vs_P,Biosynthesis of cofactors,22,-0.01408
+P-NCDs_vs_P,Glycerophospholipid metabolism,5,0.09524
+P-NCDs_vs_P,alpha-Linolenic acid metabolism,1,0.25
+P-NCDs_vs_P,Biosynthesis of unsaturated fatty acids,0,0.5
+P-NCDs_vs_P,ABC transporters,8,-0.09375
+P-NCDs_vs_P,Pantothenate and CoA biosynthesis,1,0
+P-NCDs_vs_P,Porphyrin metabolism,2,-0.1111
+P-NCDs_vs_P,Vitamin B6 metabolism,2,-0.3333
+P+G_vs_P,Glycine serine and threonine metabolism,3,0.2
+P+G_vs_P,Cysteine and methionine metabolism,7,0.2
+P+G_vs_P,Arginine biosynthesis,2,0
+P+G_vs_P,Alanine aspartate and glutamate metabolism,2,0
+P+G_vs_P,Arginine and proline metabolism,1,0.05882
+P+G_vs_P,Citrate cycle (TCA cycle),2,0
+P+G_vs_P,C5-Branched dibasic acid metabolism,2,0
+P+G_vs_P,Glyoxylate and dicarboxylate metabolism,5,0.2143
+P+G_vs_P,Amino sugar and nucleotide sugar metabolism,3,0.1667
+P+G_vs_P,Oxidative phosphorylation,4,-0.1667
+P+G_vs_P,Nitrogen metabolism,0,0
+P+G_vs_P,Nucleotide metabolism,18,0.08696
+P+G_vs_P,Biosynthesis of cofactors,25,0.04225
+P+G_vs_P,Glycerophospholipid metabolism,4,0
+P+G_vs_P,alpha-Linolenic acid metabolism,1,0.125
+P+G_vs_P,Biosynthesis of unsaturated fatty acids,0,0
+P+G_vs_P,ABC transporters,8,0.1875
+P+G_vs_P,Pantothenate and CoA biosynthesis,1,0.1111
+P+G_vs_P,Porphyrin metabolism,3,0.1111
+P+G_vs_P,Vitamin B6 metabolism,1,0.3333
+P+G-NCDs_vs_P-NCDs,Glycine serine and threonine metabolism,3,0.2
+P+G-NCDs_vs_P-NCDs,Cysteine and methionine metabolism,5,0.06667
+P+G-NCDs_vs_P-NCDs,Arginine biosynthesis,2,0.25
+P+G-NCDs_vs_P-NCDs,Alanine aspartate and glutamate metabolism,2,0.1538
+P+G-NCDs_vs_P-NCDs,Arginine and proline metabolism,2,0.1176
+P+G-NCDs_vs_P-NCDs,Citrate cycle (TCA cycle),2,0.3333
+P+G-NCDs_vs_P-NCDs,C5-Branched dibasic acid metabolism,1,0.1667
+P+G-NCDs_vs_P-NCDs,Glyoxylate and dicarboxylate metabolism,5,0.3571
+P+G-NCDs_vs_P-NCDs,Amino sugar and nucleotide sugar metabolism,6,0.2222
+P+G-NCDs_vs_P-NCDs,Oxidative phosphorylation,3,-0.08333
+P+G-NCDs_vs_P-NCDs,Nitrogen metabolism,1,0.5
+P+G-NCDs_vs_P-NCDs,Nucleotide metabolism,17,0.1304
+P+G-NCDs_vs_P-NCDs,Biosynthesis of cofactors,22,0.08451
+P+G-NCDs_vs_P-NCDs,Glycerophospholipid metabolism,4,-0.1429
+P+G-NCDs_vs_P-NCDs,alpha-Linolenic acid metabolism,1,0.125
+P+G-NCDs_vs_P-NCDs,Biosynthesis of unsaturated fatty acids,0,0
+P+G-NCDs_vs_P-NCDs,ABC transporters,8,0.125
+P+G-NCDs_vs_P-NCDs,Pantothenate and CoA biosynthesis,1,0.1111
+P+G-NCDs_vs_P-NCDs,Porphyrin metabolism,2,0.2222
+P+G-NCDs_vs_P-NCDs,Vitamin B6 metabolism,2,0.5"
+
+df <- read.csv(text = data, header = TRUE, stringsAsFactors = FALSE, row.names = NULL)
+df$Pathway <- factor(df$Pathway, levels = unique(df$Pathway))  
+
+library(ggplot2)
+
+colnames(df) <- c("Group", "Pathway", "Num", "DA_Score")
+
+df$Num <- as.numeric(df$Num)
+df$DA_Score <- as.numeric(df$DA_Score)
+
+df$Group <- factor(df$Group, levels = c("P+G-NCDs_vs_P+G", "P-NCDs_vs_P", "P+G_vs_P", "P+G-NCDs_vs_P-NCDs", "P+G-NCDs_vs_G-NCDs"))
+
+ggplot(df, aes(x = Pathway, y = Group, size = Num, fill = DA_Score)) +
+  geom_point(shape = 21, color = "black", stroke = 0.75, alpha = 0.8) +  
+  scale_fill_gradient2( 
+    low = "#00B9F0", 
+    mid = "white", 
+    high = "#EB2879",
+    midpoint = 0,
+    limits = c(-0.5, 0.5),     
+    breaks = seq(-0.5, 0.5, by = 0.1), 
+    labels = seq(-0.5, 0.5, by = 0.1)
+  ) +
+  scale_size_continuous(range = c(4, 14)) +
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 40, hjust = 1, size = 12, face = "bold"),
+    axis.text.y = element_text(size = 12, face = "bold"),
+    panel.grid.major = element_line(color = "gray70", size = 0.3),
+    legend.box = "horizontal",
+    legend.title = element_text(size = 10),
+    legend.key.height = unit(1, "cm"),  
+    plot.title = element_text(size = 14, face = "bold", hjust = 0.5, margin = margin(b = 10)),
+    axis.line = element_blank(), 
+    panel.border = element_rect(color = "black", fill = NA, size = 0.75), 
+    axis.ticks = element_blank(),
+    panel.background = element_rect(fill = "white"),
+    plot.background = element_rect(fill = "white", color = NA)
+  ) +
+  labs(
+    title = "KEGG Pathway Analysis",
+    x = NULL,
+    y = NULL,
+    fill = "DA Score",
+    size = "Number"
+  )
